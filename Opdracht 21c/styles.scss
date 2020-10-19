@@ -1,0 +1,66 @@
+$width: 60px;
+$height: 60px;
+$padding: 10px;
+
+body {
+    background-color: lightgray;
+    height: 725px;
+    width: 1425px;
+}
+ul {
+    width: $width;
+    height: 300px;
+    position: absolute;
+    padding: $padding;
+    left: 94%;
+    top: 45%;
+    list-style-type: none;
+}
+.ul__blog {
+    width: $width;
+    height: $height;
+    background-color: #e17b77;
+}
+.ul__twitter {
+    width: $width;
+    height: $height;
+    background-color: #00aced;
+}
+.ul__linkedin {
+    width: $width;
+    height: $height;
+    background-color: #007bb6;
+}
+.ul__facebook{
+    width: $width;
+    height: $height;
+    background-color: #3b5998;
+}
+.ul__github {
+    width: $width;
+    height: $height;
+    background-color: #333;
+}
+.ul__img {
+    width: 40px;
+    height: 40px;
+    padding: $padding;
+}
+.ul__text {
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    left: 60px;
+    padding: $padding;
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.ul__blog:hover, .ul__twitter:hover, .ul__linkedin:hover, .ul__facebook:hover, .ul__github:hover {
+    width: 230px;
+    transform: translateX(-170px);
+    transition-duration: 500ms; 
+}
+.ul__blog:hover .ul__text, .ul__twitter:hover .ul__text, .ul__linkedin:hover .ul__text, .ul__facebook:hover .ul__text, .ul__github:hover .ul__text {
+    visibility: visible;
+}
