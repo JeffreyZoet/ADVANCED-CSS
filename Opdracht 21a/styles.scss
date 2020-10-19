@@ -1,0 +1,59 @@
+$padding: 5px 11px;
+$margin: 5px 11px;
+$padding1: 25px;
+$font-size: 22.5px;
+
+.div {
+    width: 490px;
+    height: 570px;
+    background-color: #c3cfe2;
+    padding: $padding;
+    margin: $margin;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 375px 175px;
+    text-align: center;
+    width: 90%;
+    height: 96%;
+    padding: $padding;
+    margin: $margin;
+    font-family: sans-serif;  
+}
+.card__top {
+background-color: #fff;
+font-size: $font-size;
+border-radius: 25px 25px 0px 0px;
+padding: $padding1;
+}
+.card__bottom {
+font-size: $font-size;
+background-color: #686de0;
+border-radius: 0px 0px 25px 25px;
+padding: $padding1;
+}
+.card__text {
+    text-align: left;
+    line-height: 40px;
+    margin: 10px;  
+}
+.card__img {
+    width: 124px;
+    height: 124px;
+    border: 5px solid #fff;
+    border-radius: 200px;
+    position: absolute;
+    top: 325px;
+    left: 197px;
+}
+.card__name {
+    color: white;
+    letter-spacing: 1.5px;
+    padding: $padding1;
+}
+.card__website {
+    font-size: 18px;
+    color: lightgray;
+    margin: -35px;  
+}
