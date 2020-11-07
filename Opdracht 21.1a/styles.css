@@ -1,0 +1,65 @@
+.background {
+  width: 430px;
+  height: 520px;
+  background-color: #c3cfe2;
+  padding: 5px 10px;
+  margin: 5px 5px;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px;
+      grid-template-columns: 400px;
+  -ms-grid-rows: 330px 170px;
+      grid-template-rows: 330px 170px;
+  text-align: center;
+  width: 95%;
+  height: 85%;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.card .card__bottom, .card .card__top, .card .card__name {
+  padding: 20px;
+}
+
+.card .card__top {
+  background-color: #fff;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card .card__bottom {
+  background-color: #686de0;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card .card__text {
+  text-align: left;
+  line-height: 35px;
+  margin: 15px;
+}
+
+.card .card__img {
+  width: 110px;
+  height: 110px;
+  border: 5px solid #fff;
+  border-radius: 200px;
+  position: absolute;
+  top: 280px;
+  left: 180px;
+}
+
+.card .card__name {
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+.card .card__website {
+  font-size: 17px;
+  color: lightgray;
+  margin: -30px;
+}
+/*# sourceMappingURL=styles.css.map */
