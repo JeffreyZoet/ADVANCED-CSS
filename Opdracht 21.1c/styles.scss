@@ -1,0 +1,60 @@
+$width: 60px;
+$height: 60px;
+$padding: 10px;
+
+body {
+    background-color: lightgray;
+    height: 725px;
+    width: 1425px;
+}
+.media {
+    width: $width;
+    height: 300px;
+    position: absolute;
+    padding: $padding;
+    left: 94%;
+    top: 45%;
+    list-style-type: none;
+}
+.media__blog, .media__twitter, .media__linkedln, .media__facebook, .media__github {
+    width: $width;
+    height: $height;
+}
+.media__blog {
+    background-color: #e17b77;
+}
+.media__twitter {
+    background-color: #00aced;
+}
+.media__linkedln {
+    background-color: #007bb6;
+}
+.media__facebook{
+    background-color: #3b5998;
+}
+.media__github {
+    background-color: #333;
+}
+.media__img {
+    width: 40px;
+    height: 40px;
+    padding: $padding;
+}
+.media__text {
+    visibility: hidden;
+    position: absolute;
+    top: -5px;
+    left: 60px;
+    padding: $padding;
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+}
+.media__blog:hover, .media__twitter:hover, .media__linkedln:hover, .media__facebook:hover, .media__github:hover {
+    width: 230px;
+    transform: translateX(-170px);
+    transition-duration: 500ms; 
+}
+.media__blog:hover .media__text, .media__twitter:hover .media__text, .media__linkedln:hover .media__text, .media__facebook:hover .media__text, .media__github:hover .media__text {
+    visibility: visible;
+}
